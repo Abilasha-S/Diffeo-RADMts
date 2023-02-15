@@ -60,8 +60,8 @@ def downsample_train(data, down_len):
 
 def main():
 
-    test = pd.read_csv('./data/ecg/test_warp.csv', index_col=0)
-    train = pd.read_csv('./data/ecg/train_warp.csv', index_col=0)
+    test = pd.read_csv('./data/hai/hai_test.csv', index_col=0)
+    train = pd.read_csv('./data/hai/hai_train.csv', index_col=0)
 
 
     test = test.iloc[:, 0:]
@@ -112,10 +112,10 @@ def main():
     print(test_df.values.shape)
 
 
-    train_df.to_csv('./data/ecg/train.csv')
-    test_df.to_csv('./data/ecg/test.csv')
+    train_df.to_csv('./data/hai/train.csv')
+    test_df.to_csv('./data/hai/test.csv')
 
-    f = open('./data/ecg/list.txt', 'w')
+    f = open('./data/hai/list.txt', 'w')
     for col in train.columns:
         f.write(col+'\n')
     f.close()
