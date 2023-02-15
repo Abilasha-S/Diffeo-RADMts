@@ -22,7 +22,33 @@ pip install -r requirements.txt
 
 2. Download data. SWaT and WADI datasets can be requested from [iTrust](https://itrust.sutd.edu.sg/). Other datasets are given in data folder on each modules separately. All datasets are preprocessed and this can be done by executing.
 ```
-python .
+python ./graph_learn/scripts/process_all.py
+```
+Data format for graph learn module (this is same as GDN)
+```
 
+data
+ |-your_dataset
+ | |-list.txt
+ | |-train.csv
+ | |-test.csv
+ | ...
+
+```
+
+### Notices:
+* The first column in .csv will be regarded as index column. 
+* The column sequence in .csv don't need to match the sequence in list.txt, we will rearrange the data columns according to the sequence in list.txt.
+* test.csv should have a column named "attack" which contains ground truth label(0/1) of being attacked or not(0: normal, 1: attacked)
 
 3. Train and evaluate. We provide the experiment scripts of all benchmarks under the folder `./scripts`. You can reproduce the experiment results as follows:
+
+## Run
+```
+    # using gpu
+    bash ./scipts/SWAT.sh <gpu_id> <dataset>
+
+    # or using cpu
+    bash ./scipts/SWAT.sh cpu <dataset>
+```
+You can change running parameters in the each .sh file.
