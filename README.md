@@ -1,6 +1,6 @@
 # Diffeo-RADMts
 
-Repository for our <b>KDD 2023</b> paper, [Diffeomorphic Aligned Robust Anomaly Detection for MUltivariate Time Series] co-authored by: Abilasha S, Sahely Bhadra. This combines two modules 
+Repository for our paper, "Diffeomorphic Aligned Robust Anomaly Detection for MUltivariate Time Series" co-authored by: Abilasha S, Sahely Bhadra. This combines two modules 
 1) Diffeomorphic Alignment Network ([dtan](https://github.com/BGU-CS-VIL/dtan))
 2) Graph Learnining module
 
