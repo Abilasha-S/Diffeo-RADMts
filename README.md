@@ -2,7 +2,7 @@
 
 Repository for our paper, "Diffeomorphic Aligned Robust Anomaly Detection for MUltivariate Time Series" co-authored by: Abilasha S, Sahely Bhadra. This combines two modules 
 1) Diffeomorphic Alignment Network ([dtan](https://github.com/BGU-CS-VIL/dtan))
-2) Graph Learnining module
+2) Graph Learning module
 
 ## Author of this software
 Abilasha S (email: 111814001@smail.iitpkd.ac.in)
