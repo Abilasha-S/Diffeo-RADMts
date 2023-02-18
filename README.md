@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 python ./graph_learn/scripts/process_all.py
 ```
-Data format for graph learn module (this is same as GDN)
+Data format for graph learn module
 ```
 
 data
