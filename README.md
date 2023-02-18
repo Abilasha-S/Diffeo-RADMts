@@ -47,9 +47,9 @@ data
 ## Run
 ```
     # using gpu
-    bash ./scipts/<dataset>.sh <gpu_id> <dataset>
+    bash ./scripts/<dataset>.sh <gpu_id> <dataset>
 
     # or using cpu
-    bash ./scipts/<dataset>.sh cpu <dataset>
+    bash ./scripts/<dataset>.sh cpu <dataset>
 ```
 You can change running parameters in the each .sh file.
